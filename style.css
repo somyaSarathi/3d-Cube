@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  background: linear-gradient(90deg, cyan, teal);
+}
+
+#cube {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  margin: 200px auto;
+  color: white;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  vertical-align: center;
+  font-size: xxx-large;
+  font-weight: 700;
+  border-width: 5px;
+  border-color: black;
+  text-align: center;
+  border-style: solid;
+  position: relative;
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+  position: absolute;
+}
+
+#first {
+  background-color: rgba(255, 0, 0, 0.5);
+  transform: rotateY(0deg) translateZ(100px);
+}
+
+#second {
+  background-color: rgba(255, 166, 0, 0.5);
+  transform: rotateY(90deg) translateZ(200px) translateX(-100px);
+  transform-origin: left;
+}
+
+#third {
+  background-color: rgba(0, 0, 255, 0.5);
+  color: white;
+  transform: translateZ(-100px) rotateY(180deg);
+}
+
+#fourth {
+  background-color: rgba(0, 128, 0, 0.5);
+  transform-origin: left;
+  transform: rotateY(90deg) translateX(-100px);
+}
+
+#fifth {
+  background-color: rgba(0, 128, 128, 0.5);
+  transform-origin: bottom;
+  transform: rotateX(90deg) translateY(100px);
+}
+
+#sixth {
+  background-color: rgba(76, 0, 130, 0.5);
+  transform-origin: top;
+  transform: rotateX(-90deg) translateY(-100px);
+}
+
+#cube:hover {
+  transform: rotate3d(1, 1, 1, 1turn);
+  transform-origin: center;
+  transition: all linear 3.5s;
+  transition-delay: 0.2s;
+}
